@@ -23,7 +23,9 @@ public class main {
     public static String getFirstUChar(String str) {
         Map<Character, Integer> locations = new HashMap<Character, Integer>();
 
-        if( str.isEmpty() ) return "empty";
+        if( str.isEmpty() ) {
+            return "empty";
+        }
 
         // Here we fill locations hash with index of first character position or -1 if character appears more than once
         for(int c=0; c<str.length(); c++){

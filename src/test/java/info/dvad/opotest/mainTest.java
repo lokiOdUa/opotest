@@ -15,5 +15,7 @@ public class mainTest {
         assertEquals("1", main.getFirstUChar("1234567890"));
         assertEquals("1", main.getFirstUChar("000000000000000000000001234567890"));
         assertEquals("1", main.getFirstUChar("1%%@@##!!(())&&**^^%%$$##@@!!||``\"\"\'\'"));
+        assertEquals("H", main.getFirstUChar("\u0048\u0065\u006C\u006C\u006F World"));
+        assertEquals("_", main.getFirstUChar("\u0048\u0048\u0065\u0065\u006C\u006C\u006F_World"));
     }
 }
